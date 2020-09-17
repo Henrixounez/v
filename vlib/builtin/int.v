@@ -385,7 +385,7 @@ pub fn (b byte) str() string {
 
 pub fn (b byte) str_escaped() string {
 	str := match b {
-		0 { '`\\' + '0`' } // Bug is preventing \\0 in a literal
+		0 { '`\\0`' }
 		7 { '`\\a`' }
 		8 { '`\\b`' }
 		9 { '`\\t`' }
